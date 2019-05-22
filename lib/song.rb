@@ -29,8 +29,8 @@ class Song
   
   def self.genre_count 
     @@genre_count.each do |genre| 
-      if self.genre_count[genre]
-        self.genre_count[genre] += 1 
+      if @@genre_count[genre]
+        @@genre_count[genre] += 1 
       else 
         self.genre_count[genre] = 1 
       end
